@@ -1,0 +1,121 @@
+/* css/style.css */
+
+/* 他のスタイルがないか確認してから追加する */
+.entry-content {
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333;
+}
+
+.entry-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 追加 */
+.entry-content p {
+    margin-bottom: 1.5em;
+}
+
+.entry-content a {
+    color: #1DA1F2;
+    text-decoration: none;
+}
+
+.entry-content a:hover {
+    text-decoration: underline;
+}
+
+/* Cocoon Child テーマの記事スタイルに合わせて追加 */
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+    margin-bottom: 1em;
+    color: #333;
+}
+
+/* 他のスタイルがあれば追加 */
+
+/* 以下は元のコードに追記 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #1DA1F2;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+header.hidden {
+    transform: translateY(-100%);
+}
+
+main {
+    padding-bottom: 60px;
+    margin-top: 170px;
+}
+
+.tab-content {
+    display: none;
+}
+
+#tab-posts .post-container {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#tab-posts .post-container h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+#tab-posts .post-container img {
+    max-width: 100%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+footer.page-footer {
+    background-color: #1DA1F2;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+}
+
+.material-icons {
+    font-size: 24px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 60px;
+}
+
+footer.page-footer {
+    z-index: 2;
+}
